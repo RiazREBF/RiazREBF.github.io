@@ -1,7 +1,8 @@
 .background {
-  background-image: url(https://wallpapercave.com/wp/ksbwZBK.jpg); /* Replace 'background-image-url.jpg' with the URL of your image */
-  background-size: stretch; /* Cover the entire background */
-  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-image: url(https://wallpapercave.com/wp/ksbwZBK.jpg);
+  background-size: cover; /* Cover the entire background */
+  height: 100vh; /* strech to cover the whole page top to bottom */
+  background-repeat: no-repeat;
   text-align: justify;
   padding: 10px;
   margin: 100px 10px 10px 10px;
@@ -20,7 +21,7 @@
 
 .navigationBar {
   border-radius: 20%;
-  margin: 5% 20px;
+  margin: 5px 20px;
   background-color: rgba(173, 216, 230, 0.5); //lightblue, 50% opacity
 }
 
@@ -30,7 +31,9 @@
   text-decoration: underline;
   weight: bold;
   border-radius: 20%;
-  margin: 5% 20px;
+  border: black solid 2px;
+  margin: 5px 20px;
+  padding: 15px;
   background-color: rgba(173, 216, 230, 0.5); //lightblue, 50% opacity
 }
 
