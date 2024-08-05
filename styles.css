@@ -119,14 +119,14 @@ body {
 /* Code Joke Section */
 .humourousCodingJoke {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh; /* Ensure the container takes the full viewport height */
     padding: 10px;
 }
 
 .left-img, .right-img {
-    width: 15%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
     height: auto;
 }
 
