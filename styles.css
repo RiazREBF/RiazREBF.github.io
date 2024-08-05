@@ -34,7 +34,17 @@
   border: black solid 2px;
   margin: 5px 20px;
   padding: 15px;
-  background-color: rgba(173, 216, 230, 0.5); //lightblue, 50% opacity
+  background-color: rgba(173, 216, 230, 0.5); //lightblue, 75% opacity
+}
+
+.mainTitleCaption {
+  font-size: 25px;
+  font-family: 'Amatic SC',sans-serif;
+  border-radius: 20%;
+  border: black solid 2px;
+  margin: 5px 20px;
+  padding: 15px;
+  background-color: rgba(173, 216, 230, 0.5); //lightblue, 75% opacity
 }
 
 /* Body styles */
