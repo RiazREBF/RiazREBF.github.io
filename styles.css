@@ -26,7 +26,12 @@
 
 .mainTitle {
   font-size: 40px;
-  font-family: 'Raleway', 'arial';
+  font-family: 'Amatic SC',sans-serif;
+  text-decoration: underline;
+  weight: bold;
+  border-radius: 20%;
+  margin: 5% 20px;
+  background-color: rgba(173, 216, 230, 0.5); //lightblue, 50% opacity
 }
 
 /* Body styles */
