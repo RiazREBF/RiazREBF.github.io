@@ -168,3 +168,11 @@ footer {
 .p-20 {
     padding: 20px;
 }
+
+.code-style {
+  color: #00FF00; /* Green text */
+  background-color: #000000; /* Black background */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  padding: 10px;
+  border-radius: 5px;
+}
