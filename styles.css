@@ -127,7 +127,7 @@ body {
 }
 
 .left-img, .right-img {
-    width: 25%; /* Adjust as needed */
+    width: auto; /* Adjust as needed */
     object-fit: cover;
     height: auto;
 }
