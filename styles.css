@@ -33,18 +33,20 @@
   border-radius: 20%;
   border: black solid 2px;
   margin: 5px 20px;
-  padding: 15px;
+  padding: 25px;
   background-color: rgba(173, 216, 230, 0.5); //lightblue, 75% opacity
 }
 
 .mainTitleCaption {
   font-size: 25px;
   font-family: 'Amatic SC',sans-serif;
-  border-radius: 20%;
+  border-radius: 30%;
   border: black solid 2px;
   margin: 5px 20px;
   padding: 15px;
   background-color: rgba(173, 216, 230, 0.5); //lightblue, 75% opacity
+  weight: none;
+  text-decoration: none;
 }
 
 /* Body styles */
