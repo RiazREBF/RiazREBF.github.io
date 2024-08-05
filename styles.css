@@ -135,13 +135,22 @@ ul {
     list-style-type: none;
 }
 
-a {
-    color: #333;
-    text-decoration: none;
+a { 
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: none;
+  border: 2px solid grey;
+  border-radius: 15px;
+  transition: all 1s ease-in-out 0s;
+}
+
+a:active {
+  background-color: rgba(173, 216, 230, 0.5); //lightblue, 75% opacity
+  transition: all 1s ease-in-out 0s;
 }
 
 /* Footer styles */
@@ -151,6 +160,37 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
+/* Buttons */
+.btn {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 20px;
+    background: rgba(100, 100, 200, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 8px rgba(255, 255, 255, 0.7),
+                inset 3px 3px 5px rgba(0, 0, 0, 0.2),
+                3px 3px 8px rgba(0, 0, 0, 0.3);
+    color: lightblue;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover {
+    background-color: rgba(200, 200, 100, 0.5);
+    color: darkblue;
+    transition: all 1s ease-in-out 0s;
+  }
+
+  .btn:active {
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.3),
+                inset -3px -3px 8px rgba(255, 255, 255, 0.7); /* Reverse shadows for pressed effect */
+    background-color: rgba(250, 250, 150, 0.8);;
+    color: darkblue;
+    border-radius: 50%;
+  }
 
 /* Utility classes */
 .text-center {
@@ -170,9 +210,13 @@ footer {
 }
 
 .code-style {
-  color: #00FF00; /* Green text */
-  background-color: #000000; /* Black background */
-  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  color: #00FF00;
+  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
   padding: 10px;
   border-radius: 5px;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1); /* Used to flip images' left/right facing */ 
 }
