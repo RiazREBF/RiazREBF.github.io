@@ -101,7 +101,7 @@ nav a:hover {
 
 .navigationBar {
   border-radius: 20%;
-  margin: 5px 20px;
+  margin: 20px 20px 60px;
   background-color: rgba(173, 216, 230, 0.5); //lightblue, 50% opacity
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .center-content {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
