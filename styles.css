@@ -122,7 +122,8 @@ body {
     justify-content: center;
     align-items: stretch;
     height: 100vh; /* Ensure the container takes the full viewport height */
-    padding: 10px;
+    padding: 0px 10px;
+    margin: 0px
 }
 
 .left-img, .right-img {
@@ -140,8 +141,8 @@ body {
 }
 
 .bottom-img {
-    margin-top: 10px;
-    width: 100%; /* Ensures the image width matches the code-text width above */
+    margin-top: 0px;
+    width: 25%; /* Ensures the image width matches the code-text width above */
     height: auto;
 }
 
