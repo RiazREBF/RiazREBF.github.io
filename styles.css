@@ -1,8 +1,10 @@
+
+/* General Styles */
 .background {
   background-image: url(https://wallpapercave.com/wp/ksbwZBK.jpg);
   background-size: cover; /* Cover the entire background */
   height: 100vh; /* strech to cover the whole page top to bottom */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   text-align: justify;
   padding: 10px;
   margin: 100px 10px 10px 10px;
@@ -19,10 +21,35 @@
     box-sizing: border-box;
 }
 
-.navigationBar {
-  border-radius: 20%;
-  margin: 5px 20px;
-  background-color: rgba(173, 216, 230, 0.5); //lightblue, 50% opacity
+a { 
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  border: 2px solid grey;
+  border-radius: 15px;
+  transition: all 1s ease-in-out 0s;
+}
+
+a:active {
+  background-color: rgba(173, 216, 230, 0.5); //lightblue, 75% opacity
+  transition: all 1s ease-in-out 0s;
+}
+
+/* --------------------------------------------------------------- */
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
 }
 
 .mainTitle {
@@ -49,22 +76,7 @@
   text-decoration: none;
 }
 
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
+/* --------------------------------------------------------------- */
 /* Navigation styles */
 nav {
     display: flex;
@@ -87,6 +99,65 @@ nav a:hover {
     background-color: #555;
 }
 
+.navigationBar {
+  border-radius: 20%;
+  margin: 5px 20px;
+  background-color: rgba(173, 216, 230, 0.5); //lightblue, 50% opacity
+}
+
+
+/* --------------------------------------------------------------- */
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --------------------------------------------------------------- */
+/* Code Joke Section */
+.humourousCodingJoke {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ensure the container takes the full viewport height */
+    padding: 10px;
+}
+
+.left-img, .right-img {
+    width: 15%; /* Adjust as needed */
+    height: auto;
+}
+
+.center-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Adjust as needed */
+}
+
+.bottom-img {
+    margin-top: 10px;
+    width: 100%; /* Ensures the image width matches the code-text width above */
+    height: auto;
+}
+
+.code-style {
+  color: #00FF00;
+  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1); /* Used to flip images' left/right facing */ 
+}
+
+/* --------------------------------------------------------------- */
 /* Container styles */
 .container {
     padding: 20px;
@@ -103,9 +174,7 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
-}
+
 
 /* About section styles */
 .about {
@@ -135,23 +204,7 @@ ul {
     list-style-type: none;
 }
 
-a { 
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-}
 
-a:hover {
-  text-decoration: none;
-  border: 2px solid grey;
-  border-radius: 15px;
-  transition: all 1s ease-in-out 0s;
-}
-
-a:active {
-  background-color: rgba(173, 216, 230, 0.5); //lightblue, 75% opacity
-  transition: all 1s ease-in-out 0s;
-}
 
 /* Footer styles */
 footer {
@@ -209,14 +262,3 @@ footer {
     padding: 20px;
 }
 
-.code-style {
-  color: #00FF00;
-  background-color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.flip-horizontal {
-  transform: scaleX(-1); /* Used to flip images' left/right facing */ 
-}
