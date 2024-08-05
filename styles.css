@@ -120,13 +120,13 @@ body {
 .humourousCodingJoke {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 100vh; /* Ensure the container takes the full viewport height */
     padding: 10px;
 }
 
 .left-img, .right-img {
-    width: 100%; /* Adjust as needed */
+    width: 25%; /* Adjust as needed */
     height: auto;
 }
 
