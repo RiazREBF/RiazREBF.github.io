@@ -277,11 +277,10 @@ footer {
   content: ">";
 }
 
-.breadcrumb > li {
-  display: inline;
+.breadcrumb a {
+  text-decoration: none;
 }
 
-.breadcrumb li+li::before {
-  padding: 10px;
-  content: ">";
+.breadcrumb a:hover {
+  color: red;
 }
