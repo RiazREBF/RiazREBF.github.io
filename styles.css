@@ -265,3 +265,14 @@ footer {
     padding: 20px;
 }
 
+/*------------------------------------*/
+/* Storing this breadcrumb style for future use */
+.breadcrumb > li {
+  display: inline;
+}
+
+.breadcrumb li+li::before {
+  padding: 10px;
+  content: ">";
+}
+
