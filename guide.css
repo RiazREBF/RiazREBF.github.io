@@ -1,0 +1,247 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+/* Centered title styling */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: white;
+}
+
+/* Division styling */
+div {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: black;
+    color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading within divisions */
+h2 {
+    font-size: 1.5em;
+    color: rgb(200, 200, 200);
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* List styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Font list items styling */
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Italic and bold text styling */
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/*-----------------------------------------------*/
+
+/* Styling for the 'colors' list */
+ul.colors {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Styling for each color item */
+ul.colors li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+/*-----------------------------------------------*/
+/* Background colors for each list item */
+ul.colors li.red {
+    background-color: rgb(255, 0, 0);
+}
+
+ul.colors li.blue {
+    background-color: rgb(0, 0, 255);
+}
+
+ul.colors li.green {
+    background-color: rgb(0, 128, 0);
+}
+
+ul.colors li.yellow {
+    background-color: rgb(255, 255, 0);
+    color: black; /* Better contrast for yellow */
+}
+
+ul.colors li.purple {
+    background-color: rgb(128, 0, 128);
+}
+/*-----------------------------------------------*/
+
+/* ---Text Styles--- */
+
+.text-styles {
+  font-size: 1em;
+}
+
+.MyTitle {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.MySubtitles {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* ---Hyperlinks--- */
+.MyLinks {
+    color: #007BFF;
+    text-decoration: none;
+}
+.MyLinks:hover {
+    text-decoration: underline;
+}
+/* ---------------- */
+
+.OrangeGrad {
+    background: linear-gradient(45deg, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.NeonGlowGreen {
+    color: #39FF14;
+    text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 40px #0fa, 0 0 80px #0fa;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.NeonGlowRed {
+    color: #FF073A;
+    text-shadow: 0 0 5px #FF073A, 0 0 10px #FF073A, 0 0 20px #FF073A, 0 0 40px #FF1C58, 0 0 80px #FF1C58;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.NeonGlowBlue {
+    color: #00BFFF;
+    text-shadow: 0 0 5px #00BFFF, 0 0 10px #00BFFF, 0 0 20px #00BFFF, 0 0 40px #1E90FF, 0 0 80px #1E90FF;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.NeonGlowPink {
+    color: #FF69B4;
+    text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4, 0 0 20px #FF69B4, 0 0 40px #FF1493, 0 0 80px #FF1493;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.NeonGlowYellow {
+    color: #FFFF33;
+    text-shadow: 0 0 5px #FFFF33, 0 0 10px #FFFF33, 0 0 20px #FFFF33, 0 0 40px #FFD700, 0 0 80px #FFD700;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.NeonGlowOrange {
+    color: #FFA500;
+    text-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 20px #FFA500, 0 0 40px #FF8C00, 0 0 80px #FF8C00;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.NeonGlowPurple {
+    color: #A020F0;
+    text-shadow: 0 0 5px #A020F0, 0 0 10px #A020F0, 0 0 20px #A020F0, 0 0 40px #8A2BE2, 0 0 80px #8A2BE2;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.CodeStyle {
+    background-color: #000; /* Black background */
+    color: #00FF00; /* Bright green text */
+    font-family: "Courier New", Courier, monospace; /* Monospace font */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Keeps the code block inline */
+    font-size: 1em; /* Standard font size */
+    line-height: 1.5em; /* Line height for better readability */
+}
+
+.NeonGlowBlueShine {
+    color: #00BFFF;
+    text-shadow: 0 0 5px #00BFFF, 0 0 10px #00BFFF, 0 0 20px #00BFFF, 0 0 40px #1E90FF, 0 0 80px #1E90FF;
+    font-size: 2em;
+    font-weight: bold;
+    transition: text-shadow 1s ease; /* Smooth transition for the glow */
+}
+
+.NeonGlowBlueShine:hover {
+    text-shadow: 0 0 10px #00BFFF, 0 0 20px #00BFFF, 0 0 30px #00BFFF, 0 0 50px #1E90FF, 0 0 100px #1E90FF;
+}
+
+/* --- Imported Fonts --- */
+
+.new-amsterdam-regular {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.matemasie-regular {
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans-jp-standard {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-jp-italics {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italics;
+}
+
+.noto-sans-jp-bold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
