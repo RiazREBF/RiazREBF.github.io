@@ -1,0 +1,239 @@
+/* Made based on: https://www.codecademy.com/journeys/front-end-engineer/paths/fecj-22-improved-styling-with-css/tracks/fecj-22-making-a-website-responsive/modules/wdcp-22-layout-with-flexbox-c6c85b4d-0af4-463c-a524-60d812a4b011/projects/tea-cozy */
+
+/* General Styles */
+
+body {
+  background-color: black;
+  opacity: 0.9;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
+}
+
+figcaption {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+  width: 300px;
+}
+
+figure {
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Fixed Header - Navigation Bar section */
+
+#fixedHeader {
+  height: 69px;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+}
+
+#fixedHeader p {
+  color: seashell;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+#logo {
+  height: 50px;
+  margin-right: auto;
+  padding-left: 10px;
+  align-items: center;
+}
+
+/* hero banner section */
+
+#heroSection
+{
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+#heroSection img {
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+#heroText {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+}
+
+#heroSection h2, h4 {
+  background-color: black;
+  width: 100%;
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
+  margin: 0px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Tea of the Month Section */
+
+#teaOfTheMonth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#teaOfTheMonth h2 {
+  text-align: center;
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
+}
+
+.productsSection {
+  width: 100%;
+  max-width: 1000px;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productImage {
+  height: 200px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+/* Locations Section */
+
+#locationsSection {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#locationsSection img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 500px;
+  z-index: -1; 
+}
+
+#LocationsContentContainer {
+  height: 500px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: none;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+#LocationsHeaders {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: none;
+  padding: 0px;
+  top: 0;
+  margin-top: 35px;
+  position: absolute;
+}
+
+#LocationsContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
+}
+
+#LocationsContent article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  background-color: black;
+  height: 300px;
+  width: 280px;
+  min-width: 160px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#LocationsContent article h3 {
+
+  font-size: 22px;
+  text-align: center;
+  margin: 0; 
+  color: seashell; 
+}
+
+/* Footer 1 */
+
+#footer1contact h2, h5 {
+  text-align: center;
+  
+}
+
+/* Footer 2, far left bottom corner */
+
+#footer2copyright p {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: seashell;
+  opacity: 0.9;
+}
