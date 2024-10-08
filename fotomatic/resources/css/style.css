@@ -132,14 +132,17 @@ header .content .logo {
 /* Sign Up Section */
 
 .main-content .banner {
-    background-image: url(./resources/images/banner-landingpage.jpg);
+    background-image: url(./images/banner-landingpage.jpg);
+    background-size: cover;      /* Ensures the image covers the entire area */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 43.5rem;
+  /* height: 43.5rem; */ 
 }
 
 #sign-up-cta {
@@ -147,6 +150,7 @@ header .content .logo {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin: 10.625rem 0rem 10.62rem 6.25rem;
 }
 
 #sign-up-cta .content {
@@ -160,6 +164,8 @@ header .content .logo {
 
 #sign-up-cta h1 {
   font-size: 3.125rem;
+  font-face: "Rubik";
+  line-height: 1.4;
 }
 
 #sign-up-cta h2 {
@@ -181,7 +187,12 @@ header .content .logo {
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
-  padding: 1.25rem 7.25rem;
+  padding: 1.25rem 6.25rem;
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  width: 408px;
+  height: 64px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 760px) {
