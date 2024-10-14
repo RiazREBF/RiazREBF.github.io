@@ -208,12 +208,19 @@ header .content .logo {
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
-  padding: 1.25rem 6.25rem;
-  margin-left: 6.25rem;
-  margin-right: 6.25rem;
   width: 408px;
   height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #4A4A4A;
+  color: white;
   font-size: 20px;
+  font-family: "Roboto";
+  font-weight: medium;
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 760px) {
