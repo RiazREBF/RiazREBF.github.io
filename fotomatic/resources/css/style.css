@@ -272,23 +272,27 @@ header .content .logo {
 /* Features Section */
 
 #features-section {
+  height: 635px;
   display: flex;
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
 }
 
-.feature {
-  flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
-  background-color: white;
-}
-
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  overflow: hidden; /* Prevent overflow */
+  display: flex; /* Use flexbox if needed */
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.feature .image-container img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent bottom margin/space */
 }
 
 .feature h2 {
