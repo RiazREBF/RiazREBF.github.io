@@ -147,13 +147,13 @@ header .content .logo {
     background-size: cover;      /* Ensures the image covers the entire area */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    margin-top: 5.313rem; /* 85px */
+    /* margin-top: 5.313rem; /* 85px */
 }
 
 #sign-up-section {
   display: flex;
   position: relative;
-  padding-top: 5.313rem; /* 85px */
+  /* padding-top: 5.313rem; /* 85px */
   justify-content: flex-start;
   align-items: flex-start;
   /* height: 43.5rem; */ 
