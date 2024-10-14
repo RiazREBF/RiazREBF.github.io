@@ -5,6 +5,11 @@ html {
   font-size: 1rem;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -49,26 +54,31 @@ header .content {
   display: flex;
   align-items: center;
   padding: 0 1.875rem;
+  height: 5.313rem; /* 85px */
 }
 
 header .logo {
-  vertical-align: center;
   flex: 1;
 }
 
 header nav ul {
   display: flex;
-  float: right;
+  align-items: center;
+  height: 100%;
   margin-right: 1.875rem;
 }
 
 nav li {
   padding-right: 3.5rem;
-  vertical-align: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 nav a {
-  vertical-align: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
