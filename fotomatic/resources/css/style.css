@@ -271,7 +271,7 @@ header .content .logo {
 
 /* Features Section */
 
-#features-section {
+##features-section {
   display: flex;
   justify-content: space-between;
   padding: 4rem 5%;
@@ -279,34 +279,37 @@ header .content .logo {
 }
 
 .feature {
-  height: 635px;
   flex: 1;
   margin: 0px 1.25rem;
+  padding: 2rem;
   background-color: white;
 }
 
 .feature .image-container {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  max-height: 100%; /* Ensure image doesn't exceed container height */
   width: 90%;
   height: 65%;
-  margin: 32px 32px 40px 32px;
+  margin: 0 auto;
   overflow: hidden;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
 
 .feature .image-container img {
-  max-width: 100%; 
+  max-width: 90%;
+  max-height: 65%; /* Ensure image doesn't exceed container height */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Prevent bottom margin/space */
 }
 
 .feature .content {
-  height: 187px;
   padding: 0px 0px 0px 0px;
   margin: 0px auto;
   width: 80%;
- 
+  height: auto; 
 }
 
 .feature h2 {
@@ -326,6 +329,19 @@ header .content .logo {
   color: #4a4a4a;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 890px) {
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  .feature h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
 }
 
 /* Filters Section */
