@@ -384,6 +384,16 @@ header .content .logo {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#filters-section img {
+  width: 100%; /* Ensure the image fits the width of the container */
+  height: auto; /* Ensure the image fits the height of the container */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  object-position: center; /* Centers the image */
+  display: block; /* Remove any bottom space caused by inline elements */
 }
 
 @media only screen and (max-width: 760px) {
