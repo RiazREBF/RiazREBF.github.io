@@ -140,6 +140,18 @@ header .content .logo {
   }
 }
 
+@media only screen and (max-width: 480px) {
+    header {
+    height: 48px;
+    min-height: auto;
+  }
+  
+    header .content {
+    height: 48px;
+    min-height: auto;
+  }
+ }
+
 /* Sign Up Section */
 
 .main-content .banner {
@@ -432,21 +444,27 @@ header .content .logo {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+  margin-left: auto;
 }
 
 #quotes-section quote-citation {
   height: 1.875rem;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 760px) {
