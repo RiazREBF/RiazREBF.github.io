@@ -360,7 +360,7 @@ header .content .logo {
 
 @media only screen and (max-width: 760px) {
   #features-section {
-    flex-flow: column;
+    flex-flow: row;
     padding: 0;
   }
 
@@ -441,8 +441,13 @@ header .content .logo {
     padding: 0;
   }
 
+@media only screen and (max-width: 480px) {
   #filters-section .extra {
     display: none;
+  }
+
+  #filters-section .images-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
