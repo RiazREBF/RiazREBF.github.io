@@ -448,6 +448,7 @@ header .content .logo {
 
   #filters-section .images-container {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
   }
 }
 
@@ -475,25 +476,32 @@ header .content .logo {
   margin-left: auto;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
   margin-right: auto;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    #quotes-section .content {
+    display: flex;
+    flex-flow: column;
   }
 }
 
