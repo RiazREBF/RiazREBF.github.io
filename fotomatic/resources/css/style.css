@@ -43,12 +43,12 @@ html, body {
 
 header {
   position: fixed;
+  z-index: 2;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
-  height: 5.313rem; /* 85px */
   min-height: 48px;
-  z-index: 2;
+  margin-top: 0px;
 }
 
 header .content {
@@ -64,8 +64,6 @@ header .logo {
 
 header nav ul {
   display: flex;
-  align-items: center;
-  height: 100%;
   margin-right: 1.875rem;
 }
 
@@ -77,14 +75,14 @@ nav li {
 }
 
 nav a {
-  display: flex;
-  align-items: center;
-  height: 100%;
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
   font-family: "Roboto";
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 header .icon {
@@ -118,14 +116,14 @@ header .content .logo {
   }
 
   header .content {
-    padding: 0 .5rem;
+    padding: 0;
   }
 
   header .mobile ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: auto;
   }
 
   header .mobile li {
@@ -133,10 +131,17 @@ header .content .logo {
   }
 
   header .mobile .button {
-    padding: .1875rem .5rem;
+    padding: .1875rem 0.5rem .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+    margin-left: auto;
+  }
+  header .icon {
+    padding-left: 0;
+  }
+  header .content .logo {
+    padding-left: 0
   }
 }
 
