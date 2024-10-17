@@ -118,7 +118,7 @@ header .content .logo {
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 0 .5rem;
   }
 
   header .mobile ul {
