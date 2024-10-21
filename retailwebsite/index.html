@@ -1,113 +1,327 @@
-<!doctype html>
-<html class="no-js" lang="">
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
 
-<body>
-  <!-------------------------------------------------->
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 
-  <header>
-      <h1>Ani-Tech</h1>
-    <navlinks>
-      <a>Main</a>
-      <a>News</a>
-      <a>Store</a>
-      <a>Contact</a>
-    </navlinks>
-  </header>
-  <!--------------------------------------------------> 
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 
-  <banner>
-    <h1>Ani-Tech</h1>
-    <h6>The latest anime merchandise from the series you love</h6>
-  </banner>
-  <!-------------------------------------------------->  
+/*
+ * A better looking default horizontal rule
+ */
 
-  <main>
-    <image-parent-container>
-      
-      <h2>Check out our product categories!</h2>
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
-      <image-container>
-          <img>
-          <h3>Figurines</h3>
-      </image-container>
-      
-      <image-container>
-          <img>
-          <h3>Plushies</h3>
-      </image-container>
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
 
-      <image-container>
-          <img>
-          <h3>Shirts</h3>
-      </image-container>
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
 
-       <image-container>
-          <img>
-          <h3>Cosplay</h3>
-      </image-container>
-      
-      <image-container>
-          <img>
-          <h3>Posters</h3>
-      </image-container>
+/*
+ * Remove default fieldset styles.
+ */
 
-    </image-parent-container>
-  </main>
-  <!-------------------------------------------------->  
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
-  <team>
-      <h2>Meet our team</h2>
+/*
+ * Allow only vertical resizing of textareas.
+ */
 
-      <team-container>
-          <h3>Manager</h3>
-          <img>
-          <h3>Ryan Gosling</h3>
-      </team-container>
+textarea {
+  resize: vertical;
+}
 
-      <team-container>
-          <h3>Sales</h3>
-          <img>
-          <h3>Sarah Gosling</h3>
-      </team-container>
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
-      <team-container>
-          <h3>Logistics</h3>
-          <img>
-          <h3>Tim Mackie</h3>
-      </team-container>
+/* --- color palette ---
+  Bright1   - #18A6DB   (bright blue)
+  Bright2   - #38819C   (dull blue)
+  Dark1     - #38525C       (greyish-blue)
+  Dark2     - #332E28       (dark orange)
+  Contrast1 - #37AFE1   (bright orange)
+  Contrast2 - #86623C   (dull orange)
+*/
 
-  </team>
-  <!-------------------------------------------------->  
+ header {
+   border: 1px solid mediumpurple;
 
-  <footer>
-      <h2>Ani-Tech</h2>
-      <h4>Enquiries@Ani-tech.com</h4>
-      <h4>555-555-5555</h4>
-      <h6>Enquiries@Ani-tech.com</h6>
-  </footer>
-  <!-------------------------------------------------->
-  
-  <script src="js/app.js"></script>
-</body>
+   padding: 0;
+   margin: 0;
+   }
+   
+ header h1 {
+   display: flex;
+   justify-content: center;
+   font-size: 4rem;
+   -webkit-text-stroke: 2px black; /* Adds a thick black outline */
+   color: #18A6DB;
+   font-family: "arial";
+   padding: auto;
+   margin: 0;
+   border: 1px solid mediumpurple;
+   background-image: url("https://riazrebf.github.io/retailwebsite/img/HeaderTitleBackground.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 20%;
+   min-width: 480px;
+   }
+   
+ header navlinks {
+   display: flex;
+   justify-content: left;
+   border: 1px solid mediumpurple;
+   background-image: url("https://riazrebf.github.io/retailwebsite/img/PrincessBanner.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 20%;
+   min-width: 480px;
+  }
+   
+header navlinks a {
+   color: #18A6DB;
+   padding: 0 3%;
+   border: 1px solid mediumpurple;
+   background-color: #101020;
+   margin: 1%;
+   border-radius: 15px;
+   text-decoration: none; /* Remove underline */
+   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
 
-</html>
+/* Hover effect */
+header navlinks a:hover {
+   background-color: mediumpurple; /* Change background on hover */
+   color: white; /* Change text color on hover */
+   transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state */
+header navlinks a:active {
+   transform: translateY(1px); /* Press down effect */
+   background-color: #18A6DB; /* Change background on active */
+   color: #101020; /* Change text color on active */
+}
+
+/* Focus state for accessibility */
+header navlinks a:focus {
+   outline: 2px solid #18A6DB; /* Outline on focus */
+   outline-offset: 2px; /* Space between outline and element */
+}
+   
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
