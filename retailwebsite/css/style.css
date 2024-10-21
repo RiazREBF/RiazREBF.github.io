@@ -84,6 +84,53 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* --- color palette ---
+  Bright1   - #18A6DB   (bright blue)
+  Bright2   - #38819C   (dull blue)
+  Dark1     - #38525C       (greyish-blue)
+  Dark2     - #332E28       (dark orange)
+  Contrast1 - #37AFE1   (bright orange)
+  Contrast2 - #86623C   (dull orange)
+*/
+
+ header {
+   border: 1px solid mediumpurple;
+   background-color: #18A6DB;
+   padding: 0;
+   margin: 0;
+   }
+   
+ header h1 {
+   display: flex;
+   justify-content: center;
+   font-size: 4rem;
+   padding: 0;
+   margin: 0;
+   border: 1px solid mediumpurple;
+   background-color: #18A6DB;
+   }
+   
+ header navlinks {
+   display: flex;
+   justify-content: center;
+   border: 1px solid mediumpurple;
+   background-image: URL("/img/PrincessBanner.jpg")
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 20%;
+  }
+   
+  header navlinks a {
+   color: #18A6DB;
+   padding: 0 3%;
+   border: 1px solid mediumpurple;
+   background-color: #38525C;
+   margin: 1%;
+  }
+   
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
