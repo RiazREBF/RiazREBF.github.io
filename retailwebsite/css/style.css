@@ -104,7 +104,10 @@ textarea {
    display: flex;
    justify-content: center;
    font-size: 4rem;
-   padding: 0;
+   -webkit-text-stroke: 2px black; /* Adds a thick black outline */
+   color: #18A6DB;
+   font-family: "arial";
+   padding: auto;
    margin: 0;
    border: 1px solid mediumpurple;
    background-image: url("https://riazrebf.github.io/retailwebsite/img/HeaderTitleBackground.png");
@@ -113,11 +116,12 @@ textarea {
    background-repeat: no-repeat;
    width: 100%;
    height: 20%;
+   min-width: 480px;
    }
    
  header navlinks {
    display: flex;
-   justify-content: center;
+   justify-content: left;
    border: 1px solid mediumpurple;
    background-image: url("https://riazrebf.github.io/retailwebsite/img/PrincessBanner.jpg");
    background-size: cover;
@@ -125,15 +129,39 @@ textarea {
    background-repeat: no-repeat;
    width: 100%;
    height: 20%;
+   min-width: 480px;
   }
    
-  header navlinks a {
+header navlinks a {
    color: #18A6DB;
    padding: 0 3%;
    border: 1px solid mediumpurple;
-   background-color: #38525C;
+   background-color: #101020;
    margin: 1%;
-  }
+   border-radius: 15px;
+   text-decoration: none; /* Remove underline */
+   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect */
+header navlinks a:hover {
+   background-color: mediumpurple; /* Change background on hover */
+   color: white; /* Change text color on hover */
+   transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state */
+header navlinks a:active {
+   transform: translateY(1px); /* Press down effect */
+   background-color: #18A6DB; /* Change background on active */
+   color: #101020; /* Change text color on active */
+}
+
+/* Focus state for accessibility */
+header navlinks a:focus {
+   outline: 2px solid #18A6DB; /* Outline on focus */
+   outline-offset: 2px; /* Space between outline and element */
+}
    
 
 /* ==========================================================================
