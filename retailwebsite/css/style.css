@@ -92,6 +92,12 @@ textarea {
   Contrast1 - #37AFE1   (bright orange)
   Contrast2 - #86623C   (dull orange)
 */
+  
+ body {
+   background-color: #38525C;
+   color: #18A6DB;
+   -webkit-text-stroke: 0.1px black;
+ }
 
  header {
    border: 1px solid mediumpurple;
@@ -102,12 +108,12 @@ textarea {
    
  header h1 {
    display: flex;
-   justify-content: center;
+   justify-content: left;
    font-size: 4rem;
    -webkit-text-stroke: 2px black; /* Adds a thick black outline */
    color: #18A6DB;
    font-family: "arial";
-   padding: auto;
+   padding: 0 0 0 2rem;
    margin: 0;
    border: 1px solid mediumpurple;
    background-image: url("https://riazrebf.github.io/retailwebsite/img/HeaderTitleBackground.png");
@@ -121,7 +127,7 @@ textarea {
    
  header navlinks {
    display: flex;
-   justify-content: left;
+   justify-content: center;
    border: 1px solid mediumpurple;
    background-image: url("https://riazrebf.github.io/retailwebsite/img/PrincessBanner.jpg");
    background-size: cover;
@@ -162,8 +168,55 @@ header navlinks a:focus {
    outline: 2px solid #18A6DB; /* Outline on focus */
    outline-offset: 2px; /* Space between outline and element */
 }
-   
+ 
+ /*---------------- Main Banner -----------------*/
 
+banner {
+  display: flex;
+  border: 1px solid mediumpurple;
+}
+
+banner img {
+  width: 50%;
+  border: 1px solid mediumpurple;
+  height: 100%
+}
+
+banner textcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 1px solid mediumpurple;
+  background-image: url("https://riazrebf.github.io/retailwebsite/img/Figurines.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+banner textcontainer h1 {
+  font-size: 5rem;
+  border: 1px solid mediumpurple;
+  border-radius: 40px;
+  padding: 0 1rem;
+  background-color: black;
+  font-family: arial;
+  -webkit-text-stroke: 2px white;
+     background-image: url("https://riazrebf.github.io/retailwebsite/img/HeaderTitleBackground.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+banner textcontainer h6 {
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  border: 1px solid mediumpurple;
+  background-color: black;
+  -webkit-text-stroke: 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
