@@ -1,0 +1,44 @@
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    /* background-image: url('resources/images/backgroundpainting.jpg');
+    background-size: cover; // fills up the page instead of repeating
+    background-attachment: fixed; */
+    background-color: darkgrey;
+}
+
+.mainTitle {
+  background-image: url('pattern.webp');
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Sets the height to full viewport height for demonstration */
+}
+
+.subtitle1 {
+  background-image: url('pattern.webp');
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+}
+
+.subtitle2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid black;
+}
+
+.subtitle3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+
+.blueText {
+  color: blue;
+  font-weight: bold;
+}
