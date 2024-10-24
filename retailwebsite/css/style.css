@@ -203,7 +203,7 @@ banner textcontainer {
 }
 
 banner textcontainer h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   text-align: center;
   border: 1px solid black;
   border-radius: 40px;
@@ -215,11 +215,11 @@ banner textcontainer h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 30px;
+  margin: 20% 30px 10% 30px ;
 }
 
 banner textcontainer h6 {
-  font-size: 35px;
+  font-size: 2rem;
   display: flex;
   text-align: center;
   border: 1px solid mediumpurple;
@@ -227,7 +227,7 @@ banner textcontainer h6 {
   -webkit-text-stroke: 0;
   width: 80%;
   border-radius: 2rem;
-  margin: 30px;
+  margin: 10% 30px 20% 30px ;
 }
 
 @media only screen and (max-width: 480px) {
@@ -242,7 +242,9 @@ banner textcontainer h6 {
   
   banner textContainer h1 {
     padding: 0 0.5rem;
-    minnnnnnnnnnnnnnnn-width: 480px;
+
+    min-width: 300px;
+    font-size: 80px;
   }
   
     header navlinks {
@@ -256,15 +258,31 @@ banner textcontainer h6 {
   banner textContainer {
     width: 100%;
   }
+
+  main .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main .image-container {
+    margin: 10px;
+    background-color: black;
+  }
   
+main .image-container img {
+  object-fit: cover; /* Makes the image cover the container */
+  object-position: center; /* Centers the image */
+  width: 400px; /* Stretches the image to the full width */
+  height: 300px; /* Specify the height you want */
+}
+
 }
 
  /*---------------- Products Section -----------------*/
  
  /* Main grid container for images */
 main .image-parent-container {
-  display: block;
-  
+  display: block; 
   gap: 10px; /* Adds space between grid items */
   border: 2px solid black;
   padding: 20px;
@@ -274,18 +292,26 @@ main .image-parent-container {
 main .product-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 15px;
 }
 
 /* Sub-header styling */
 main .sub-header {
   text-align: center;
-  background-color: #4a4a4a;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px #18A6DB; /* Adds a thick black outline */
+  color: #18A6DB;
+  background-color: #101020;
   color: white;
-  padding: 20px;
+  padding: 5px;
   border: 2px solid black;
   border-radius: 15px;
-  margin: 0 120px;
+  margin: 0px;
+}
+
+main .sub-header h2 {
+color: #18A6DB
 }
 
 /* Individual product containers */
@@ -293,13 +319,16 @@ main .image-container {
   border: 2px solid black;
   padding: 10px;
   text-align: center;
+  margin: 10px;
+  background-color: black;
 }
 
 /* Ensures images take up full width of the container */
 main .image-container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  object-fit: cover; /* Makes the image cover the container */
+  object-position: center; /* Centers the image */
+  width: 250px; /* Stretches the image to the full width */
+  height: 300px; /* Specify the height you want */
 }
 
 /* ==========================================================================
