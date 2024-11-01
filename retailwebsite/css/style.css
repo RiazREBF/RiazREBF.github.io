@@ -100,16 +100,20 @@ textarea {
 */
   
  body {
-   background-color: #38525C;
+   background-color: #300030; 
    color: #18A6DB;
    -webkit-text-stroke: 0.1px black;
+   margin: 0px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items; center;
  }
 
  header {
    border: 1px solid mediumpurple;
-
-   padding: 0;
-   margin: 0;
+   padding: 0px;
+   margin: 0px;
    }
    
  header h1 {
@@ -135,7 +139,7 @@ textarea {
    display: flex;
    justify-content: center;
    border: 1px solid mediumpurple;
-   background-color: black;
+   background-color: purple;
    /* background-image: url("https://riazrebf.github.io/retailwebsite/img/PrincessBanner.jpg");
    background-size: cover;
    background-position: center;
@@ -148,8 +152,10 @@ textarea {
 header navlinks a {
    color: #18A6DB;
    padding: 0 3%;
-   border: 1px solid mediumpurple;
-   background-color: #101020;
+   border: 1px solid #101020;
+   background-color: mediumpurple;
+   font-size: 1.4rem;
+   color: black;
    margin: 1%;
    border-radius: 15px;
    text-decoration: none; /* Remove underline */
@@ -158,8 +164,8 @@ header navlinks a {
 
 /* Hover effect */
 header navlinks a:hover {
-   background-color: mediumpurple; /* Change background on hover */
-   color: white; /* Change text color on hover */
+   background-color: #101020; /* Change background on hover */
+   color: purple; /* Change text color on hover */
    transform: translateY(-2px); /* Slight lift effect */
 }
 
@@ -181,9 +187,12 @@ header navlinks a:focus {
 banner {
   display: flex;
   border: 1px solid mediumpurple;
+  margin: 0px 0px;
 }
 
 banner img {
+  object-fit: cover; /* Makes the image cover the container */
+  object-position: center; /* Centers the image */
   width: 50%;
   border: 1px solid mediumpurple;
   height: 100%
@@ -208,13 +217,13 @@ banner textcontainer h1 {
   border: 1px solid black;
   border-radius: 40px;
   padding: 0 1rem;
-  background-color: purple;
-  font-family: arial;
+  background-color: #101020;
+  font-family: "arial";
   -webkit-text-stroke: 2px black;
-  background-image: url("https://riazrebf.github.io/retailwebsite/img/HeaderTitleBackground.png");
+  /* background-image: url("https://riazrebf.github.io/retailwebsite/img/HeaderTitleBackground.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   margin: 20% 30px 10% 30px ;
 }
 
@@ -223,12 +232,15 @@ banner textcontainer h6 {
   display: flex;
   text-align: center;
   border: 1px solid mediumpurple;
-  background-color: black;
+  background-color: #101020;
   -webkit-text-stroke: 0;
   width: 80%;
   border-radius: 2rem;
+  padding: 10px;
   margin: 10% 30px 20% 30px ;
 }
+
+      /* Mobile Responsiveness */
 
 @media only screen and (max-width: 480px) {
   
@@ -266,7 +278,7 @@ banner textcontainer h6 {
 
   main .image-container {
     margin: 10px;
-    background-color: black;
+    background-color: #101020;
   }
   
 main .image-container img {
@@ -278,15 +290,39 @@ main .image-container img {
 
 }
 
+ /* Tablet Responsiveness */
+
+@media only screen and (max-width: 1500px) {
+  
+    banner .hide-on-tablet {
+    display: none;
+  }  
+  
+    banner textContainer {
+    width: 100%;
+  }
+  
+    banner textContainer h6 {
+      display: flex;
+      justify-content: center;
+    }
+  
+}
+
  /*---------------- Products Section -----------------*/
  
- /* Main grid container for images */
+main {
+  margin: 0px 0px;
+  background-color: #38525C;
+}
+
 main .image-parent-container {
   display: block; 
   gap: 10px; /* Adds space between grid items */
   border: 2px solid black;
   padding: 20px;
   justify-content: center;
+  min-width: 480px;
 }
 
 main .product-container {
@@ -321,6 +357,7 @@ main .image-container {
   text-align: center;
   margin: 10px;
   background-color: black;
+  border-radius: 15px;
 }
 
 /* Ensures images take up full width of the container */
@@ -331,6 +368,89 @@ main .image-container img {
   height: 300px; /* Specify the height you want */
 }
 
+ /*---------------- Products Section -----------------*/
+ 
+team {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 2rem;
+  min-width: 480px;
+  margin: 10px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #38525C;
+}
+
+team .team-parent-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+team h2 {
+  border: 2px solid mediumpurple;
+  border-radius: 15px;
+  background-color: #200020;
+  text-align: center;
+  font-size: 3rem;
+  max-width: 700px;
+  max-height: 100px;
+  padding: 0px 20px;
+}
+
+team h3 {
+  text-decoration: underline;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #200020;
+  margin: 5px auto 15px auto;
+  padding: 5px;
+}
+  
+team h4 {
+  text-decoration: underline;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #200020;
+  margin: 5px auto 15px auto;
+  padding: 5px;
+}
+ 
+team .team-container {
+  border: 2px solid black;
+  padding: 30px;
+  text-align: center;
+  margin: 10px;
+  background-color: #907090;
+  border-radius: 15px;
+  margin: 15px 100px;
+}
+ 
+ team .team-container img {
+  object-fit: cover; 
+  object-position: center; 
+  width: 250px; 
+  height: 300px; 
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+/*---------------- Footer Section -----------------*/
+
+footer {
+  margin: 15px 0px;
+  border: 2px solid black;
+  margin-right: 80%;
+  margin: 10px 80% 10px 20px;
+  padding: 10px;
+  background-color: #38425C;
+  border-radius: 15px;
+  min-width: 200px;
+    -webkit-text-stroke: 0.2px black; /* Adds a thick black outline */
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
