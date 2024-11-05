@@ -329,7 +329,8 @@ main .product-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 15px;
+  margin: 5rem 15px;
+  
 }
 
 /* Sub-header styling */
@@ -366,6 +367,7 @@ main .image-container img {
   object-position: center; /* Centers the image */
   width: 250px; /* Stretches the image to the full width */
   height: 300px; /* Specify the height you want */
+  border-radius: 15px;
 }
 
  /*---------------- Products Section -----------------*/
