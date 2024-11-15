@@ -1,0 +1,690 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* --- color palette ---
+  Bright1   - #18A6DB   (bright blue)
+  Bright2   - #38819C   (dull blue)
+  Dark1     - #38525C   (greyish-blue)
+  Dark2     - #332E28   (dark orange)
+  Contrast1 - #37AFE1   (bright orange)
+  Contrast2 - #86623C   (dull orange)
+  Code      - #00FF00   (hacker code green)
+*/
+
+.CodeStyle {
+    background-color: #000;
+    color: #00FF00;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  banner textcontainer h6,
+  banner textcontainer h1
+  {
+    background-color: #000;
+    color: #00FF00;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  p .CodeStyle {
+    background-color: #000;
+    color: #00FF00;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+ body {
+   background-color: black; 
+   color: #00FF00;
+   /* -webkit-text-stroke: 0.1px black; */
+   margin: 0px 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items; center;
+ }
+
+ header {
+   border: 1px solid #00FF00;
+   padding: 0px;
+   margin: 0px;
+   }
+   
+ header h1 {
+   display: flex;
+   justify-content: left;
+   font-size: 4rem;
+   /* -webkit-text-stroke: 2px black; /* Adds a thick black outline */ 
+   background-color: black;
+   color: #00BB00;
+   font-family: "arial";
+   padding: 0 0 0 2rem;
+   margin: 0;
+   border: 1px solid #00FF00;
+   width: 100%;
+   height: 20%;
+   min-width: 480px;
+   }
+ 
+ header navlinks h3 {
+   font-family: "Courier"
+   border: 0;
+ }
+ header navlinks {
+   display: flex;
+   justify-content: center;
+   border: 1px solid #00FF00;
+   background-color: #000000;
+   /* background-image: url("https://riazrebf.github.io/retailwebsite/img/PrincessBanner.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat; */
+   width: 100%;
+   height: 20%;
+   min-width: 480px;
+  }
+   
+header navlinks a {
+   
+   padding: 0 3%;
+   border: 1px solid #00FF00;
+   background-color: black;
+   font-size: 1.4rem;
+   color: #00FF00;
+   margin: 1%;
+   border-radius: 15px;
+   letter-spacing: 2px;
+   text-decoration: none; /* Remove underline */
+   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+header navlinks h3 {   
+   padding: 0 3%;
+   border: 1px solid #101020;
+   background-color: black;
+   font-size: 1.4rem;
+   color: #00FF00;
+   margin: 1%;
+   border-radius: 15px;
+   letter-spacing: 2px;
+   text-decoration: none; /* Remove underline */
+   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect */
+header navlinks a:hover {
+   background-color: #004400; /* Change background on hover */
+   color: white; /* Change text color on hover */
+   transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state */
+header navlinks a:active {
+   transform: translateY(1px); /* Press down effect */
+   background-color: #00FF00; /* Change background on active */
+   color: black; /* Change text color on active */
+}
+
+/* Focus state for accessibility */
+header navlinks a:focus {
+   outline: 2px solid #18A6DB; /* Outline on focus */
+   outline-offset: 2px; /* Space between outline and element */
+}
+ 
+ /*---------------- Main Banner -----------------*/
+
+quoteContainer {
+  padding: 1rem 10%;
+}
+
+quoteContainer p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+banner {
+  display: flex;
+  border: 1px solid black;
+  margin: 0px 0px;
+}
+
+banner img {
+  object-fit: cover; /* Makes the image cover the container */
+  object-position: center; /* Centers the image */
+  width: 50%;
+  border: 1px solid #00FF00;
+  height: 100%
+}
+
+banner textcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 0px solid black;
+  background-color: black;
+}
+
+banner textcontainer h1 {
+  font-size: 3rem;
+  text-align: center;
+  border: 0px solid black;
+  border-radius: 10px;
+  padding: 0 1rem;
+  background-color: black;
+  font-family: "arial";
+  letter-spacing: 2px;
+  /* -webkit-text-stroke: 2px black; */
+  /* background-image: url("https://riazrebf.github.io/retailwebsite/img/HeaderTitleBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  margin: 5% 30px 5px 30px ;
+}
+
+banner textcontainer p {
+  font-size: 1.5rem;
+  display: flex;
+  text-align: left;
+  border: 0px solid black;
+  background-color: black;
+  -webkit-text-stroke: 0;
+  width: 80%;
+  border-radius: 2rem;
+  padding: 0px 1rem;
+  margin: 0px 30px 5% 30px ;
+  font-family: "Courier New", Courier, monospace;
+}
+
+banner textcontainer pre {
+  display: flex;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+      /* Mobile Responsiveness */
+
+@media only screen and (max-width: 480px) {
+  
+  .hide-on-mobile {
+    display: none;
+  }  
+
+  header h1 {
+    display: none;
+  }
+  
+  banner textContainer h1 {
+    padding: 0 0.5rem;
+    min-width: 300px;
+    font-size: 80px;
+  }
+  
+    header navlinks {
+    display: block;
+  }
+  
+  banner {
+    min-width: 480px;
+  }
+  
+  banner textContainer {
+    width: 100%;
+  }
+  
+  banner textContainer h1 {
+    font-size: 2rem;
+  }
+
+  main .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main .image-container {
+    margin: 10px;
+    background-color: #101020;
+  }
+  
+main .image-container img {
+  object-fit: cover; /* Makes the image cover the container */
+  object-position: center; /* Centers the image */
+  width: 400px; /* Stretches the image to the full width */
+  height: 300px; /* Specify the height you want */
+}
+
+}
+
+ /* Tablet Responsiveness */
+
+@media only screen and (max-width: 1500px) {
+  
+    banner .hide-on-tablet {
+    display: none;
+  }  
+  
+    banner textContainer {
+    width: 100%;
+  }
+  
+    banner textContainer h6 {
+      display: flex;
+      justify-content: left;
+    }
+  
+}
+
+ /*---------------- Products Section -----------------*/
+ 
+main {
+  margin: 0px 0px;
+  background-color: #38525C;
+}
+
+main .image-parent-container {
+  display: block; 
+  gap: 10px; /* Adds space between grid items */
+  border: 2px solid black;
+  padding: 20px;
+  justify-content: center;
+  min-width: 480px;
+}
+
+main .product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5rem 15px;
+  
+}
+
+/* Sub-header styling */
+main .sub-header {
+  text-align: center;
+  font-size: 4rem;
+  -webkit-text-stroke: 2px #18A6DB; /* Adds a thick black outline */
+  color: #18A6DB;
+  background-color: #101020;
+  color: white;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 0px;
+}
+
+main .sub-header h2 {
+color: #18A6DB
+}
+
+/* Individual product containers */
+main .image-container {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  background-color: black;
+  border-radius: 15px;
+}
+
+/* Ensures images take up full width of the container */
+main .image-container img {
+  object-fit: cover; /* Makes the image cover the container */
+  object-position: center; /* Centers the image */
+  width: 250px; /* Stretches the image to the full width */
+  height: 300px; /* Specify the height you want */
+  border-radius: 15px;
+}
+
+ /*---------------- Products Section -----------------*/
+ 
+team {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 2rem;
+  min-width: 480px;
+  margin: 10px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #38525C;
+}
+
+team .team-parent-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+team h2 {
+  border: 2px solid #00FF00;
+  border-radius: 15px;
+  background-color: #200020;
+  text-align: center;
+  font-size: 3rem;
+  max-width: 700px;
+  max-height: 100px;
+  padding: 0px 20px;
+}
+
+team h3 {
+  text-decoration: underline;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #200020;
+  margin: 5px auto 15px auto;
+  padding: 5px;
+}
+  
+team h4 {
+  text-decoration: underline;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #200020;
+  margin: 5px auto 15px auto;
+  padding: 5px;
+}
+ 
+team .team-container {
+  border: 2px solid black;
+  padding: 30px;
+  text-align: center;
+  margin: 10px;
+  background-color: #907090;
+  border-radius: 15px;
+  margin: 15px 100px;
+}
+ 
+ team .team-container img {
+  object-fit: cover; 
+  object-position: center; 
+  width: 250px; 
+  height: 300px; 
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+/*---------------- Footer Section -----------------*/
+
+footer {
+  margin: 15px 0px;
+  border: 2px solid black;
+  margin-right: 80%;
+  margin: 10px 80% 10px 20px;
+  padding: 10px;
+  background-color: #38425C;
+  border-radius: 15px;
+  min-width: 200px;
+    -webkit-text-stroke: 0.2px black; /* Adds a thick black outline */
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

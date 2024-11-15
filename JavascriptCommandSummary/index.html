@@ -1,0 +1,501 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-------------------------------------------------->
+
+  <header>
+      <h1>Javascript Command Summary</h1>
+    <navlinks>
+      <h3 style="color: #0099ff; border: 0;">Select Prebuilt Code Snippets From Below</h3>
+    </navlinks>   
+    <navlinks>
+      <a>Standard Declarations</a>
+      <a>Common Functions</a>
+      <a>Standard Loop Constructs</a>
+      <a>Else If Statements</a>
+    </navlinks>
+    <navlinks>
+      <a>Asynchronus HTML Request Functions</a>
+      <a>Standard Button Constructs</a>
+      <a>Asynchronus Functions</a>
+      <a>Form Constructs</a>
+     </navlinks>
+  </header>
+  <!--------------------------------------------------> 
+  
+      <quoteContainer>
+        <p>
+        "The beast of metal endures longer than the flesh of men. Those that tend the beasts of metal must labour long to learn its ways, for a single beast must suffer the mastership of many men until ready to shed its vorpal coils. Those that seek apprenticeship must attend closely to the runes of mobilisation, the rites of maintenance, and the words-of-power that describe the parts of a beast."
+        </p>
+      </quoteContainer>
+  
+  <banner>
+    
+    <textContainer>
+      
+      <h1>Basic Commands</h1>
+      <p>console.log()</p>
+      <p>//comment</p>
+      <p>/* multi-line comment */</p>
+      <p>Operators: + - * / % <br>(% used to find remainders / multiples)<br>i.e. (number % 2 === 0) // can locate even numbers</p>
+      <p>Concatenation Syntax:<br> console.log('hi' + 'ya'); // Prints 'hiya'</p>
+      <p>String Method Syntax:<br>'example string'.methodName()<br>i.e. 'hello'.toUpperCase(); // Prints HELLO<br>i.e. with argument: 'Hey'.startsWith('H'); // Prints true</p>
+      <p>Object Methods:<br>Math.ceil(); // rounds up<br>Math.floor(); // rounds down</p>
+      <p>Assigning Variables:<br>
+      var stringName = 'stringWords'; //outdated, still has niche uses (always global scope)<br>
+      let stringName = 'stringWords'; //variable can be changed<br>
+      const stringName = 'stringWords'; //variable cannot be changed
+      </p>
+      <p>Compound Assignment Operators:<br>
+      += -= *= /=<br>
+      i.e. variableName += 1; // this will add one to the variable<br>Shorthand:<br>gainedDollar++; // increases variable by 1<br>
+lostDollar-- // decreases variable by 1
+</p>
+      <p>String Interpolation<br>
+      const myPet = 'armadillo';<br>
+console.log(`I own a pet ${myPet}.`);<br>
+// Output: I own a pet armadillo.<br>
+(Note, string recieving interpolation must have backticks `` not '' or "")
+</p>
+      <p></p>
+
+       
+      <h1 style="text-decoration: underline;">Functions</h1> 
+      <h1>Generic Function</h1>
+      <p>function functionName(param1, param2) {<br>
+  let result;<br>
+<br>
+<br>
+  result = param1 + param2; // main logic<br>
+<br>
+  return result;<br>
+}<br>
+<br>
+<br>
+const output = functionName(5, 10);<br>
+console.log(output);</p>
+
+
+      
+      <h1>Anonymous Function</h1>
+      <p style="color: #0099ff;">//non-hoisted; must declare before calling</p><p>const functionName = (param1, param2) => {<br>
+  let result;<br>
+<br>
+<br>
+  result = param1 + param2; // main logic<br>
+<br>
+  return result;<br>
+};</p>
+
+      <h1>Named Function</h1>
+      <p style="color: #0099ff;">//assigns function to variable; will appear in stack traces when debugging</p>
+      <p>const functionName = function addNumbers(param1, param2) {<br>
+  return param1 + param2;<br>
+};</p>
+
+      <h1>Immediately Invoked Function Expression (IIFE)</h1>
+      <p style="color: #0099ff;">//IIFE runs when defined; prevent variables polluting global scope</p><p>(function() {<br>
+  // Logic here<br>
+  console.log("This function runs immediately");<br>
+})();</p>
+    
+            <h1>Arrow Function</h1>
+      <p>const functionName = (param1, param2) => {<br>
+      let result;<br>
+<br>
+  result = param1 + param2;<br>
+<br>
+  return result;<br>
+  };</p>
+  
+        <h1>Arrow Shorthand Function</h1>
+      <p>
+      const functionName = (param1, param2) => param1 + param2;</p>
+    
+    <!------------------------------------------------>
+    
+      <h1 style="text-decoration: underline;">If Else Statement Templates</h1> 
+        <h1>Generic If Else</h1>
+        <p>
+            if (condition) {<br>
+  // Code to execute if the condition is true (positive branch)<br>
+} else {<br>
+  // Code to execute if the condition is false (negative branch)<br>
+}
+        </p>
+        
+        <h1>If Else, If Else</h1>
+        <p>if (condition1) {<br>
+  // Code to execute if condition1 is true<br>
+} else if (condition2) {<br>
+  // Code to execute if condition2 is true and condition1 is false<br>
+} else {<br>
+  // Code to execute if none of the above conditions are true<br>
+}
+        </p>
+        
+        <h1>Positive-Only If Statement</h1>
+        <p>if (condition) {<br>
+  // Code to execute if the condition is true<br>
+}<br>
+// If condition is false, nothing happens
+        </p>
+        
+        <h1>Multiple-Conditions If Else Statement</h1>
+        <p>if (condition1 && condition2) {<br>
+  // Code to execute if both condition1 and condition2 are true<br>
+} else if (condition1 || condition2) {<br>
+  // Code to execute if either condition1 or condition2 is true<br>
+} else {<br>
+  // Code to execute if none of the conditions are true<br>
+}
+        </p>
+        
+        <h1>Nested If Else Statement</h1>
+        <p>if (condition1) {<br>
+  if (condition2) {<br>
+    // Code to execute if both condition1 and condition2 are true<br>
+  } else {<br>
+    // Code to execute if condition1 is true but condition2 is false<br>
+  }<br>
+} else {<br>
+  // Code to execute if condition1 is false<br>
+}
+        </p>
+        
+  <!--------------------------------------------------->      
+        
+        <h1 style="text-decoration: underline;">Loop Templates</h1> 
+        <h1>1. For Loop</h1> 
+        <pre><code>
+for (let i = 0; i < limit; i++) {
+  // Code to execute on each iteration
+  // Access the current index with 'i'
+}
+
+//example:
+const array = [1, 2, 3, 4, 5];
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+        </code></pre>
+        
+        
+        <h1>2. While Loop</h1> 
+        <pre><code>
+while (condition) {
+  // Code to execute as long as condition is true
+  // Remember to update the condition within the loop to avoid an infinite loop
+}
+
+Example:
+let counter = 0;
+while (counter < 5) {
+  console.log(counter);
+  counter++;
+}
+        </code></pre>
+        
+        <h1>3. Do...while Loop</h1> 
+        <pre><code>
+do {
+  // Code to execute at least once
+} while (condition);
+
+example:
+let userInput;
+do {
+  userInput = prompt("Enter a valid value:");
+} while (!userInput);
+        </code></pre>
+        
+        <h1>4. For...of Loop</h1> 
+        <pre><code>
+for (const element of iterable) {
+  // Code to execute for each element in iterable
+}
+
+Example:
+const array = [10, 20, 30];
+for (const value of array) {
+  console.log(value);
+}
+        </code></pre>
+        
+        <h1>5. For...in Loop</h1> 
+        <pre><code>
+for (const key in object) {
+  if (object.hasOwnProperty(key)) {
+    // Code to execute for each key in object
+    // Access the key with 'key' and the value with 'object[key]'
+  }
+}
+
+Example:
+const person = { name: "Alice", age: 25, occupation: "Engineer" };
+for (const key in person) {
+  console.log(key + ": " + person[key]);
+}
+        </code></pre>
+        
+        <h1>6. Nested Loop</h1> 
+        <pre><code>
+for (let i = 0; i < outerLimit; i++) {
+  for (let j = 0; j < innerLimit; j++) {
+    // Code to execute within the nested loop
+    // Access outer loop index with 'i' and inner loop index with 'j'
+  }
+}
+
+Example:
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+for (let i = 0; i < matrix.length; i++) {
+  for (let j = 0; j < matrix[i].length; j++) {
+    console.log(matrix[i][j]);
+  }
+}
+        </code></pre>
+        
+    <!--------------------------------------------------->      
+        
+        <h1 style="text-decoration: underline;">Async HTML Function Templates</h1> 
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+async function fetchData() {
+  try {
+    const response = await fetch("https://api.example.com/data");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
+        </code></pre>
+        
+        
+        <h1>2. Fetch Request with Async/Await</h1> 
+        <pre><code>
+async function fetchDataFromAPI(url) {
+  try {
+    const response = await fetch(url); // Initiates the HTTP request
+    if (!response.ok) throw new Error("Network response was not ok");
+    
+    const data = await response.json(); // Waits for the data to be parsed as JSON
+    return data; // Returns the fetched data
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error; // Re-throws error to handle it at the call site if needed
+  }
+}
+
+// Usage example
+fetchDataFromAPI("https://api.example.com/data")
+  .then(data => console.log("Data received:", data))
+  .catch(error => console.error("Fetch error:", error));
+        </code></pre>
+        
+        <h1>3. Asynchronous Function with setTimeout</h1> 
+        <pre><code>
+function delayedOperation(duration) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve("Operation completed");
+    }, duration);
+  });
+}
+
+// Usage in an async function
+async function performAsyncOperation() {
+  console.log("Starting operation...");
+  const result = await delayedOperation(2000); // Waits for 2 seconds
+  console.log(result); // Logs "Operation completed"
+}
+
+performAsyncOperation();
+        </code></pre>
+        
+        <h1>4. Asynchronous Event Handler (Await User Input)</h1> 
+        <pre><code>
+HTML:
+&lt;button id=&quot;fetchButton&quot;&gt;Fetch Data&lt;/button&gt;
+JavaScript:
+document.getElementById("fetchButton").addEventListener("click", async () => {
+    try {
+      const response = await fetch("https://api.example.com/data");
+      const data = await response.json();
+      console.log("Data fetched:", data);
+    } catch (error) {
+      console.error("Error in button click handler:", error);
+    }
+  });
+        </code></pre>
+        
+        <h1>5. Running Multiple Asynchronous Operations in Parallel (Promise.all)</h1> 
+        <pre><code>
+async function fetchMultipleData() {
+  try {
+    const [data1, data2] = await Promise.all([
+      fetch("https://api.example.com/data1").then(res => res.json()),
+      fetch("https://api.example.com/data2").then(res => res.json())
+    ]);
+    console.log("Data 1:", data1);
+    console.log("Data 2:", data2);
+  } catch (error) {
+    console.error("Error fetching multiple data:", error);
+  }
+}
+
+fetchMultipleData();
+        </code></pre>
+        
+        <h1>6. Asynchronous Function with setInterval (i.e. for Polling)</h1> 
+        <pre><code>
+function startPolling(interval) {
+  const intervalId = setInterval(async () => {
+    try {
+      const response = await fetch("https://api.example.com/status");
+      const status = await response.json();
+      console.log("Current status:", status);
+      
+      if (status.complete) {
+        clearInterval(intervalId); // Stop polling if the condition is met
+        console.log("Polling stopped - Operation complete.");
+      }
+    } catch (error) {
+      console.error("Polling error:", error);
+      clearInterval(intervalId); // Stop polling in case of error
+    }
+  }, interval);
+}
+
+// Start polling every 5 seconds
+startPolling(5000);
+        </code></pre>
+        
+        <h1 style="text-decoration: underline;">Standard Button Scripts</h1> 
+        <h1>1. Alert Button</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+&lt;button id=&quot;alertButton&quot;&gt;Show Alert&lt;/button&gt;
+JavaScript:
+  document.getElementById(&quot;alertButton&quot;).addEventListener(&quot;click&quot;, () =&gt; {
+    alert(&quot;Button was clicked!&quot;);
+  });
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        <h1>1. Basic Async Function with Await</h1> 
+        <pre><code>
+HTML:
+
+JavaScript:
+
+        </code></pre>
+        
+        
+    </textContainer>
+  </banner>
+
+  <!-------------------------------------------------->  
+  <!-------------------------------------------------->  
+
+  <footer>
+      <h2>Ani-Tech</h2>
+      <h4>Enquiries@Ani-tech.com</h4>
+      <h4>555-555-5555</h4>
+  </footer>
+  <!-------------------------------------------------->
+  
+  <script src="js/app.js"></script>
+</body>
+
+</html>
+
