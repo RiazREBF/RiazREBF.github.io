@@ -13,3 +13,8 @@ document.getElementById('linkTeaCozy').addEventListener('click', function() {
 document.getElementById('linkfotomatic').addEventListener('click', function() {
   window.location.href = './fotomatic/index.html'; // Path to the desired file
 });
+
+document.getElementById('linkJavascriptCommandSummary').addEventListener('click', function() {
+  window.location.href = './JavascriptCommandSummary/index.html'; // Path to the desired file
+});
+
