@@ -15,10 +15,6 @@ document.getElementById('linkfotomatic').addEventListener('click', function() {
 });
 
 document.getElementById('linkJavascriptCommandSummary').addEventListener('click', function() {
-<<<<<<< HEAD
   window.location.href = 'https://riazrebf.github.io/javascriptcommandsummary/index.html'; // Path to the desired file
-=======
-  window.location.href = 'https://riazrebf.github.io/JavascriptCommandSummary/index.html'; // Path to the desired file
->>>>>>> fa4acf505c1fd8e1892e94c37824c16ec6387f0e
 });
 
