@@ -21,6 +21,17 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
+  <!--
+  Todo:
+  1. Add array commands
+  2. Add import/export commands
+  3. Add Input / form commands
+  4. Responsiveness for mobile breakpoint on <pre> and <code>
+  5. 'copy to clipboard' buttons
+  6. 'return to top' buttons (DONE)
+  7. 'Contents Page' Dropdown Menus, 'ScrollTo' the clicked selections
+  -->
+  
 <body>
   <!-------------------------------------------------->
 
@@ -30,16 +41,22 @@
       <h3 style="color: #0099ff; border: 0;">Select Prebuilt Code Snippets From Below</h3>
     </navlinks>   
     <navlinks>
-      <a>Standard Declarations</a>
+      <a>Basic Commands</a>
       <a>Common Functions</a>
-      <a>Standard Loop Constructs</a>
+      <a>Common Loop Constructs</a>
       <a>Else If Statements</a>
     </navlinks>
     <navlinks>
-      <a>Asynchronus HTML Request Functions</a>
+      <a>Asynchronus HTML/JSON Functions</a>
       <a>Standard Button Constructs</a>
-      <a>Asynchronus Functions</a>
+      <a>DOM Manipulation</a>
       <a>Form Constructs</a>
+     </navlinks>
+     <navlinks>
+      <a>Common Array Structures</a>
+      <a>Common Object Structures</a>
+      <a>Common Factory Functions</a>
+      <a>Error Handling and Debugging</a>
      </navlinks>
   </header>
   <!--------------------------------------------------> 
@@ -54,11 +71,29 @@
     
     <textContainer>
       
-      <h1>Basic Commands</h1>
+      <h1 style="text-decoration: underline;">Basic Commands</h1>
+      
+      <button class="scrollToTop">Back to Top</button>
+      
       <p>console.log()</p>
       <p>//comment</p>
       <p>/* multi-line comment */</p>
       <p>Operators: + - * / % <br>(% used to find remainders / multiples)<br>i.e. (number % 2 === 0) // can locate even numbers</p>
+      <p>Comparators<br>
+      ==  Loose Equality: equal values , type conversion.<br>
+=== Strict Equality:  equal values, same types only.<br>
+!=  Loose Inequality  non-equal, type conversion.<br>
+!== Strict Inequality non-equal, same types only.<br>
+<<br>
+><br>
+<=<br>
+>=<br></p>
+      <p>
+      Logical Operators:<br>
+      AND: &&<br> 
+      OR: || //Note: Alt+124 on numpad<br>
+      NOT: ! //example: !true; // false<br>
+      </p>
       <p>Concatenation Syntax:<br> console.log('hi' + 'ya'); // Prints 'hiya'</p>
       <p>String Method Syntax:<br>'example string'.methodName()<br>i.e. 'hello'.toUpperCase(); // Prints HELLO<br>i.e. with argument: 'Hey'.startsWith('H'); // Prints true</p>
       <p>Object Methods:<br>Math.ceil(); // rounds up<br>Math.floor(); // rounds down</p>
@@ -79,9 +114,11 @@ console.log(`I own a pet ${myPet}.`);<br>
 (Note, string recieving interpolation must have backticks `` not '' or "")
 </p>
       <p></p>
+      <button class="scrollToTop">Back to Top</button>
 
        
-      <h1 style="text-decoration: underline;">Functions</h1> 
+      <h1 style="text-decoration: underline;">Functions</h1>
+ 
       <h1>Generic Function</h1>
       <p>function functionName(param1, param2) {<br>
   let result;<br>
@@ -95,8 +132,6 @@ console.log(`I own a pet ${myPet}.`);<br>
 <br>
 const output = functionName(5, 10);<br>
 console.log(output);</p>
-
-
       
       <h1>Anonymous Function</h1>
       <p style="color: #0099ff;">//non-hoisted; must declare before calling</p><p>const functionName = (param1, param2) => {<br>
@@ -132,10 +167,14 @@ console.log(output);</p>
         <h1>Arrow Shorthand Function</h1>
       <p>
       const functionName = (param1, param2) => param1 + param2;</p>
+      <button class="scrollToTop">Back to Top</button>
     
     <!------------------------------------------------>
     
-      <h1 style="text-decoration: underline;">If Else Statement Templates</h1> 
+      <h1 style="text-decoration: underline;">If Else Statement Templates</h1>
+      
+
+      
         <h1>Generic If Else</h1>
         <p>
             if (condition) {<br>
@@ -184,9 +223,32 @@ console.log(output);</p>
 }
         </p>
         
+        <h1>Switch Case Statement</h1>
+        <pre><code>function performAction(input) {
+  switch (input) {
+    case 'option1':
+      // Code
+      break;
+      
+    case 'option2':
+      // Code
+      break;
+      
+    case 'option3':
+      // Code
+      break;
+      
+    default:
+      // Code
+      break;
+  }
+}</code></pre>
+<button class="scrollToTop">Back to Top</button>
+        
   <!--------------------------------------------------->      
         
-        <h1 style="text-decoration: underline;">Loop Templates</h1> 
+        <h1 style="text-decoration: underline;">Loop Templates</h1>
+        
         <h1>1. For Loop</h1> 
         <pre><code>
 for (let i = 0; i < limit; i++) {
@@ -280,10 +342,12 @@ for (let i = 0; i < matrix.length; i++) {
   }
 }
         </code></pre>
+        <button class="scrollToTop">Back to Top</button>
         
     <!--------------------------------------------------->      
         
         <h1 style="text-decoration: underline;">Async HTML Function Templates</h1> 
+        
         <h1>1. Basic Async Function with Await</h1> 
         <pre><code>
 async function fetchData() {
@@ -396,17 +460,13 @@ function startPolling(interval) {
 // Start polling every 5 seconds
 startPolling(5000);
         </code></pre>
+        <button class="scrollToTop">Back to Top</button>
+
+  <!------------------------------------------------->
+
+        <h1 style="text-decoration: underline;">Standard Button Scripts</h1>
         
-        <h1 style="text-decoration: underline;">Standard Button Scripts</h1> 
         <h1>1. Alert Button</h1> 
-        <pre><code>
-HTML:
-
-JavaScript:
-
-        </code></pre>
-        
-        <h1>1. Basic Async Function with Await</h1> 
         <pre><code>
 HTML:
 &lt;button id=&quot;alertButton&quot;&gt;Show Alert&lt;/button&gt;
@@ -416,70 +476,256 @@ JavaScript:
   });
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>2. Toggle Visibility Button</h1> 
         <pre><code>
 HTML:
-
+&lt;button id=&quot;toggleButton&quot;&gt;Toggle Visibility&lt;/button&gt;
+&lt;p id=&quot;toggleText&quot;&gt;This text will be shown or hidden.&lt;/p&gt;
 JavaScript:
+  document.getElementById("toggleButton").addEventListener("click", () => {
+    const text = document.getElementById("toggleText");
+    text.style.display = text.style.display === "none" ? "block" : "none";
+  });
+</code></pre>
+        
+        <h1>3. Change Text Button</h1> 
+        <pre><code>
+HTML:
+&lt;button id=&quot;changeTextButton&quot;&gt;Change Text&lt;/button&gt;
+&lt;p id=&quot;textElement&quot;&gt;Original Text&lt;/p&gt;
+JavaScript:
+ document.getElementById("changeTextButton").addEventListener("click", () => {
+    document.getElementById("textElement").textContent = "Text has been changed!";
+  });
+        </code></pre>
+        
+        <h1>4. Increment Counter Button</h1> 
+        <pre><code>
+HTML:
+&lt;button id=&quot;incrementButton&quot;&gt;Increment Counter&lt;/button&gt;
+&lt;p&gt;Count: &lt;span id=&quot;counter&quot;&gt;0&lt;/span&gt;&lt;/p&gt;
+JavaScript:
+ document.getElementById("incrementButton").addEventListener("click", () => {
+    const counter = document.getElementById("counter");
+    counter.textContent = parseInt(counter.textContent) + 1;
+  });
+        </code></pre>
+        
+        <h1>5. Fetch Data Button (Using fetch API)</h1> 
+        <pre><code>
+HTML:
+&lt;button id="fetchButton"&gt;Fetch Data&lt;/button&gt;
+&lt;div id="dataDisplay"&gt;Data will be displayed here&lt;/div&gt;
+JavaScript:
+ document.getElementById("fetchButton").addEventListener("click", async () => {
+    try {
+      const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+      const data = await response.json();
+      document.getElementById("dataDisplay").textContent = JSON.stringify(data, null, 2);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      document.getElementById("dataDisplay").textContent = "Error fetching data.";
+    }
+  });
+        </code></pre>
+        
+        <h1>6. Add New Element Button</h1> 
+        <pre><code>
+HTML:
+&lt;button id="addButton"&gt;Add Item&lt;/button&gt;
+&lt;ul id="itemList"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ul&gt;
+JavaScript:
+  document.getElementById("addButton").addEventListener("click", () => {
+    const newItem = document.createElement("li");
+    newItem.textContent = `Item ${document.getElementById("itemList").children.length + 1}`;
+    document.getElementById("itemList").appendChild(newItem);
+  });
+        </code></pre>
+        
+        <h1>7. Toggle Button Text (e.g., Play/Pause)</h1> 
+        <pre><code>
+HTML:
+&lt;button id="playPauseButton"&gt;Play&lt;/button&gt;
+JavaScript:
+  document.getElementById("playPauseButton").addEventListener("click", (e) => {
+    e.target.textContent = e.target.textContent === "Play" ? "Pause" : "Play";
+  });
+        </code></pre>
+        
+        <h1>8. Disable Button After Click</h1> 
+        <pre><code>
+HTML:
+&lt;button id="disableButton"&gt;Click Me Once&lt;/button&g;
+JavaScript:
+ document.getElementById("disableButton").addEventListener("click", (e) => {
+    e.target.disabled = true;
+    e.target.textContent = "Button Disabled";
+  });
+        </code></pre>
+        
+        <h1>9. Button to Change Background Color</h1> 
+        <pre><code>
+HTML:
+&lt;button id="colorButton"&gt;Change Background Color&lt;/button&gt;
+JavaScript:
+  document.getElementById("colorButton").addEventListener("click", () => {
+    document.body.style.backgroundColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+  });
+        </code></pre>
+        
+        <h1>10. Scroll to Top Button</h1> 
+        <pre><code>
+HTML:
+&lt;button id="scrollTopButton"&gt;Scroll to Top&lt;/button&gt;
+JavaScript:
+  document.getElementById("scrollTopButton").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+        </code></pre>
+        <button class="scrollToTop">Back to Top</button>
+
+  <!--------------------------------------------------> 
+  
+        <h1 style="text-decoration: underline;">Standard Array Structures</h1> 
+        
+        <h1>1. Loop Through an Array (forEach)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+arr.forEach(element => {
+  console.log(element);  // Perform some action with each element
+});
+        </code></pre>
+        
+        <h1>2. Map an Array (Create a New Array Based on Transformation)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+let doubled = arr.map(element => element * 2);  // [2, 4, 6, 8, 10]
+        </code></pre>
+        
+        <h1>3. Filter an Array (Create a Subset of Elements)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+let evenNumbers = arr.filter(element => element % 2 === 0);  // [2, 4]
+        </code></pre>
+        
+        <h1>4. Reduce an Array (Accumulate Values into a Single Output)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+let sum = arr.reduce((accumulator, element) => accumulator + element, 0);  // 15
+        </code></pre>
+        
+        <h1>5. Find an Element in an Array (find)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+let firstEven = arr.find(element => element % 2 === 0);  // 2
 
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>6. Find the Index of an Element (indexOf / findIndex)</h1> 
         <pre><code>
-HTML:
+        let arr = [1, 2, 3, 4, 5];
+let index = arr.indexOf(3);  // 2 (returns -1 if not found)
 
-JavaScript:
+let indexOfFirstEven = arr.findIndex(element => element % 2 === 0);  // 1
 
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>7. Check if an Array Includes an Element (includes)</h1> 
         <pre><code>
-HTML:
+        let arr = [1, 2, 3, 4, 5];
+let hasThree = arr.includes(3);  // true
+let hasSeven = arr.includes(7);  // false
+        </code></pre>
+        
+        <h1>8. Sort an Array (sort)</h1> 
+        <pre><code>
+        let arr = [3, 1, 4, 1, 5, 9];
+arr.sort((a, b) => a - b);  // [1, 1, 3, 4, 5, 9] (ascending order)
 
-JavaScript:
+arr.sort((a, b) => b - a);  // [9, 5, 4, 3, 1, 1] (descending order)
 
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>9. Add an Element to the End of an Array (push)</h1> 
         <pre><code>
-HTML:
-
-JavaScript:
+        let arr = [1, 2, 3];
+arr.push(4);  // [1, 2, 3, 4]
 
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>10. Remove the Last Element from an Array (pop)</h1> 
         <pre><code>
-HTML:
-
-JavaScript:
-
+        let arr = [1, 2, 3];
+let lastElement = arr.pop();  // 3; arr becomes [1, 2]
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>11. Add an Element to the Beginning of an Array (unshift)</h1> 
         <pre><code>
-HTML:
-
-JavaScript:
-
+        let arr = [1, 2, 3];
+arr.unshift(0);  // [0, 1, 2, 3]
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>12. Remove the First Element from an Array (shift)</h1> 
         <pre><code>
-HTML:
-
-JavaScript:
-
+        let arr = [1, 2, 3];
+let firstElement = arr.shift();  // 1; arr becomes [2, 3]
         </code></pre>
         
-        <h1>1. Basic Async Function with Await</h1> 
+        <h1>13. Slice a Portion of an Array (slice)</h1> 
         <pre><code>
-HTML:
-
-JavaScript:
-
+        let arr = [1, 2, 3, 4, 5];
+let slicedArr = arr.slice(1, 3);  // [2, 3] (does not include index 3)
         </code></pre>
         
+        <h1>14. Splice an Array (Add, Remove, or Replace Elements)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+arr.splice(2, 1);          // Removes 1 element at index 2; arr becomes [1, 2, 4, 5]
+arr.splice(2, 0, 99);      // Adds 99 at index 2; arr becomes [1, 2, 99, 4, 5]
+arr.splice(2, 1, 100);     // Replaces 1 element at index 2 with 100; arr becomes [1, 2, 100, 4, 5]
+        </code></pre>
+        
+        <h1>15. Flatten a Nested Array (flat)</h1> 
+        <pre><code>
+        let arr = [1, [2, [3, 4]], 5];
+let flattened = arr.flat(2);  // [1, 2, 3, 4, 5]
+        </code></pre>
+        
+        <h1>16. Check if All Elements Meet a Condition (every)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+let allPositive = arr.every(element => element > 0);  // true
+        </code></pre>
+        
+        <h1>17. Check if Some Elements Meet a Condition (some)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3, 4, 5];
+let hasEvenNumber = arr.some(element => element % 2 === 0);  // true
+        </code></pre>
+        
+        <h1>18. Concatenate Arrays (concat)</h1> 
+        <pre><code>
+        let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combined = arr1.concat(arr2);  // [1, 2, 3, 4, 5, 6]
+        </code></pre>
+        
+        <h1>19. Convert an Array to a String (join)</h1> 
+        <pre><code>
+        let arr = [1, 2, 3];
+let joinedString = arr.join("-");  // "1-2-3"
+        </code></pre>
+        
+        <h1>20. Convert a String to an Array (split)</h1> 
+        <pre><code>
+        let str = "Hello, world!";
+let arr = str.split(" ");  // ["Hello,", "world!"]
+        </code></pre>
+        <button class="scrollToTop">Back to Top</button>
+  
+  <!--------------------------------------------------> 
         
     </textContainer>
   </banner>
@@ -498,4 +744,3 @@ JavaScript:
 </body>
 
 </html>
-
